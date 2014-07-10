@@ -3,8 +3,8 @@ my-repository
 
 my way of implementing the repository pattern with EntityFramework
 
-interface IRepository<T>
-{
+   interface IRepository<T>
+   {
 	T Insert(T entity);
 	T Update(T entity);
 
@@ -23,7 +23,7 @@ interface IRepository<T>
 	void BulkInsert(IEnumerable<T> entities);
 	
 	bool SaveChanges();
-}
+    }
 
 
 
@@ -33,7 +33,8 @@ interface IRepository<T>
 
 
 
-** project uses these packages
+project uses these packages
+---------------------------
 
 * EntityFramework.6.1.1
 * EntityFramework.BulkInsert-ef6.6.0.2.8
